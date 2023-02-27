@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="top-header">
+        <div id="top-flex">
+            <div id="top-flex-left">
+                <button id="btnSignOut" type="button" onclick="signOut()">Sign Out</button>
+            </div>
+            <div id="top-flex-right">
+                <h2>Logged as: <span id="username"></span></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header-title">
+        <h1>Welcome to Home Page</h1>
+    </div>
+
+    <div class="container">
+        <h2>Welcome, <span id="username2"></span></h2>
+        <h4>Now you can create a New User</h4>
+        <form>
+            <button type="button" onclick="createNewUser()">Create New User</button>
+        </form>
+    </div>
+    <script>
+        var username = localStorage.getItem("username");
+        document.getElementById("username").textContent = username;
+        document.getElementById("username2").textContent = username;
+    </script>
+</body>
+
+</html>

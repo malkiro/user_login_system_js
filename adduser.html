@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="top-header">
+        <div id="top-flex">
+            <div id="top-flex-left">
+                <button id="btnSignOut" type="button" onclick="signOut()">Sign Out</button>
+            </div>
+            <div id="top-flex-right">
+                <button id="lblSignIn" type="button">Add New User</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>New User Add Form</h1>
+        <form>
+            <label>Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" required><br>
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="button" onclick="handleAddUser()">Add User</button>
+        </form>
+    </div>
+</body>
+
+</html>
